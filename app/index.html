@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>#YOUR_SITE_TITLE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="#INSERT_AUTHOR_NAME#">
+
+    <!-- Le styles -->
+    <link href="/styles/main.css" rel="stylesheet">
+    <style>
+
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body>
+
+    <div id="wrap">
+
+      <!-- NAVBAR
+      ================================================== -->
+      <div id="csgApp" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container-fluid" ng-controller="LoginCntl">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">&nbsp;&nbsp;#YOUR_SITE_NAME;</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div><!-- /.navbar-inner -->
+      </div><!-- /.navbar -->
+
+      <div class="container">
+        <div ng-view>
+        </div>
+        <div id="push"></div>
+      </div><!-- /.container -->
+    </div><!-- /.wrap -->
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <div class="container">
+      <p class="pull-right"><a href="/">Back to top</a></p>
+      <p>&copy; (c) #CURRENT_YEAR #COPYRIGHT_HOLDER_NAME</p>
+    </div>
+  </div>
+
+  <!-- build:js scripts/main.js -->
+  <script data-main="/scripts/main" src="/components/requirejs/require.js"></script>
+  <!-- endbuild -->
+
+  </body>
+</html>
