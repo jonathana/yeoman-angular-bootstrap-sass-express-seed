@@ -21,7 +21,7 @@ The goal of this project was to provide a working yeoman-based SPA (single page 
 ## Getting Started
 
 * Clone the git repository: `git clone https://github.com/jonathana/yeoman-angular-bootstrap-sass-express-seed.git _your_local_directory_name_`
-* `cd foo2; npm install && bower install` to get the npm modules and bower components in use by the seed in place
+* `cd _your_local_directory_name_; npm install && bower install` to get the npm modules and bower components in use by the seed in place
 * `(cd api && npm install)` to get the npm modules that the api express app needs
 * Edit app/index.html to replace all the #UPPER_CASE_SNAKE_NAMES to sane values for _your_ project
 * Provide your own app/favicon.ico and app/images/ico/apple-touch-icon-{57,72,114,144}-precomposed.png favorite icons for the site
