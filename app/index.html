@@ -1,73 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>#YOUR_SITE_TITLE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="#INSERT_AUTHOR_NAME#">
+<html xmlns:ng="http://angularjs.org" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Async IO LLC">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <!-- Le styles -->
-    <link href="/styles/main.css" rel="stylesheet">
-    <style>
+  <title>Async IO express/bootstrap/sass/angular seed</title>
+  <!--[if lte IE 8]>
+  <script>
+    // IE <= 8 angular support
+    document.createElement('ng-include');
+    document.createElement('ng-pluralize');
+    document.createElement('ng-view');
 
-    </style>
+    // Optionally these for CSS
+    document.createElement('ng:include');
+    document.createElement('ng:pluralize');
+    document.createElement('ng:view');
+  </script>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
+  <!-- Bootstrap core CSS -->
+  <link href="/styles/main.css" rel="stylesheet">
+  <!-- FontAwesome CSS + icon font -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="/favicon.ico">
-  </head>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script src="../assets/js/html5shiv.js"></script>
+  <![endif]-->
 
-  <body>
+  <!-- Bootstrap 3.x+ support for IE < 9 -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-    <div id="wrap">
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <![endif]-->
+</head>
 
-      <!-- NAVBAR
-      ================================================== -->
-      <div id="csgApp" class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container-fluid" ng-controller="LoginCntl">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="#">&nbsp;&nbsp;#YOUR_SITE_NAME;</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </div><!-- /.navbar-inner -->
-      </div><!-- /.navbar -->
+<body>
 
-      <div class="container">
-        <div ng-view>
-        </div>
-        <div id="push"></div>
-      </div><!-- /.container -->
-    </div><!-- /.wrap -->
-
-  <!-- FOOTER -->
-  <div id="footer">
-    <div class="container">
-      <p class="pull-right"><a href="/">Back to top</a></p>
-      <p>&copy; (c) #CURRENT_YEAR #COPYRIGHT_HOLDER_NAME</p>
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid" ng-controller="LoginCntl">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
+    <div class="collapse navbar-collapse">
+      <a class="navbar-brand" href="/">#YOUR_SITE_NAME;</a>
+    </div><!--/.nav-collapse -->
   </div>
+</div>
 
-  <!-- build:js scripts/main.js -->
-  <script data-main="/scripts/main" src="/components/requirejs/require.js"></script>
-  <!-- endbuild -->
+<!-- Begin page content -->
+<div class="container loading-text">
+  <div ng-view>
+  </div>
+</div><!-- /.container -->
 
-  </body>
+<div id="footer">
+  <div class="container">
+    <p class="text-muted">&copy; (c) 2013-2014 #YOUR_SITE_NAME;.  All Rights Reserved.</p>
+  </div>
+</div>
+
+
+<!-- build:js scripts/main.js -->
+<script data-main="/scripts/main" src="/components/requirejs/require.js"></script>
+<!-- endbuild -->
+</body>
 </html>

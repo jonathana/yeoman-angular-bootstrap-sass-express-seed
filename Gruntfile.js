@@ -141,6 +141,7 @@ module.exports = function (grunt) {
         javascriptsDir: '<%= yeoman.app %>/scripts',
         fontsDir: '<%= yeoman.app %>/styles/fonts',
         importPath: 'app/components',
+        require: 'sass-css-importer',
         relativeAssets: true
       },
       dist: {},
@@ -262,7 +263,6 @@ module.exports = function (grunt) {
       'compass:server',
       'livereload-start',
       'connect:livereload',
-      'open',
       'watch'
     ]);
   });
